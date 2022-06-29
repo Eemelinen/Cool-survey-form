@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient( 115deg, rgba(108, 78, 100, 0.8), rgba(100, 156, 226, 0.7) ), url(/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.survey-header {
+
+}
+
+.survey-body {
+  background-color: pink;
+}

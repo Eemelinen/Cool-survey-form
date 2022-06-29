@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cool survey form</title>
+  <title>Working with me</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <section class="survey-header">
+    <h1 id="title">Customer Experiences</h1>
+    <p id="description">Description</p>
+  </section>
+
+  <section class="survey-body">
+    <form id="survey-form">
+      <label id="name-label" for="name">name</label>
+      <input id="name" type="text" placeholder="name" required>
+      <label id="email-label" for="email">email</label>
+      <input id="email" type="email" placeholder="email" required>
+      <label id="number-label" for="number">number</label>
+      <input id="number" type="number" placeholder="phone" min="0" max="9" required>
+
+      <select id="dropdown">
+        <option value="1"></option>
+        <option value="2"></option>
+      </select>
+
+      <div>
+        <input type="radio" id="contactChoice1"
+               name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+        <input type="radio" id="contactChoice2"
+               name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+      </div>
+
+      <input type="checkbox" name="checkbox1" value="1">
+      <input type="checkbox"  name="checkbox2" value="2">
+
+      <textarea  name="textarea"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </section>
 
 </body>
 </html>
