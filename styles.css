@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #f3f3f3;
+}
+
 body:before {
   content: '';
   position: fixed;
@@ -18,11 +25,52 @@ body:before {
   background-position: center;
 }
 
-
 .survey-header {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  color: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+}
 
+.survey-header p {
+  margin-top: 10px;
 }
 
 .survey-body {
-  background-color: pink;
+  background-color: rgba(0, 0, 155, 0.35);
+  width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 8px;
 }
+
+.form-group {
+  display: flex;
+  column-gap: 15px;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group .control {
+  width: 100%;
+  display: block;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.radio-group input {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+

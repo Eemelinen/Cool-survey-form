@@ -8,38 +8,76 @@
 <body>
 
   <section class="survey-header">
-    <h1 id="title">Customer Experiences</h1>
-    <p id="description">Description</p>
+    <h1 id="title">Leave Feedback</h1>
+    <p id="description">Thank you for taking the time to help me improve</p>
   </section>
 
   <section class="survey-body">
     <form id="survey-form">
-      <label id="name-label" for="name">name</label>
-      <input id="name" type="text" placeholder="name" required>
-      <label id="email-label" for="email">email</label>
-      <input id="email" type="email" placeholder="email" required>
-      <label id="number-label" for="number">number</label>
-      <input id="number" type="number" placeholder="phone" min="0" max="9" required>
 
-      <select id="dropdown">
-        <option value="1"></option>
-        <option value="2"></option>
-      </select>
-
-      <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-        <label for="contactChoice1">Email</label>
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-        <label for="contactChoice2">Phone</label>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" class="control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="control" type="email" placeholder="Enter your email" required>
       </div>
 
-      <input type="checkbox" name="checkbox1" value="1">
-      <input type="checkbox"  name="checkbox2" value="2">
+<!--      <div class="form-group">-->
+<!--        <label id="number-label" for="number">Number</label>-->
+<!--        <input id="number" type="number" placeholder="phone" min="0" max="9" required>-->
+<!--      </div>-->
 
-      <textarea  name="textarea"></textarea>
-      <button id="submit" type="submit">Submit</button>
+      <div class="form-group">
+        <label for="dropdown">
+          Our relationship
+        </label>
+        <select class="control" id="dropdown" required>
+          <option value="" disabled selected hidden>Select one option</option>
+          <option value="1">Customer</option>
+          <option value="2">Consultation</option>
+          <option value="3">Colleague</option>
+          <option value="4">Mentorship</option>
+        </select>
+      </div>
+
+      <div class="radio-group">
+        <p>Would you like to work with me again?</p>
+        <input type="radio" id="work_again_yes"
+               name="work_again" value="yes">
+        <label for="work_again_yes">Yes</label>
+        <input type="radio" id="work_again_no"
+               name="work_again" value="no">
+        <label for="work_again_no">No</label>
+      </div>
+
+      <div class="form-group">
+        <p>In which areas did I succeed? (Check all that apply)</p>
+          <div class="checkbox-container">
+            <input id="successes_1" type="checkbox" name="successes_1" value="1">
+            <label>Team work</label>
+          </div>
+          <div class="checkbox-container">
+            <input id="successes_2" type="checkbox"  name="successes_2" value="2">
+            <label for="successes_1">Code Quality</label>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <p>Which ares in my work I need to develop? (Check all that apply)</p>
+        <div class="checkbox-container">
+          <input id="stumbles_1" type="checkbox" name="stumbles_1" value="1">
+          <label>Team work</label>
+        </div>
+        <div class="checkbox-container">
+          <input id="stumbles_2" type="checkbox"  name="stumbles_2" value="2">
+          <label for="successes_1">Code Quality</label>
+        </div>
+      </div>
+
+<!--      <textarea  name="textarea"></textarea>-->
+<!--      <button id="submit" type="submit">Submit</button>-->
     </form>
   </section>
 
