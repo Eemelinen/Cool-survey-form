@@ -42,25 +42,34 @@
         </select>
       </div>
 
-      <div class="radio-group">
-        <p>Would you like to work with me again?</p>
-        <input type="radio" id="work_again_yes"
-               name="work_again" value="yes">
-        <label for="work_again_yes">Yes</label>
-        <input type="radio" id="work_again_no"
-               name="work_again" value="no">
-        <label for="work_again_no">No</label>
+      <div class="form-group">
+        <p>Would you be ready to work with me again?</p>
+        <div>
+          <input type="radio" id="work_again_yes"
+                 name="work_again" value="yes" class="radio">
+          <label class="label-margin-left" for="work_again_yes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="work_again_maybe"
+                 name="work_again_maybe" value="maybe" class="radio">
+          <label class="label-margin-left" for="work_again_maybe">Maybe</label>
+        </div>
+        <div>
+          <input type="radio" id="work_again_no"
+                 name="work_again" value="no" class="radio">
+          <label class="label-margin-left" for="work_again_no">No</label>
+        </div>
       </div>
 
       <div class="form-group">
         <p>In which areas did I succeed? (Check all that apply)</p>
           <div class="checkbox-container">
             <input id="successes_1" type="checkbox" name="successes_1" value="1">
-            <label>Team work</label>
+            <label class="label-margin-left">Team work</label>
           </div>
           <div class="checkbox-container">
             <input id="successes_2" type="checkbox"  name="successes_2" value="2">
-            <label for="successes_1">Code Quality</label>
+            <label class="label-margin-left" for="successes_1">Code Quality</label>
           </div>
       </div>
 
@@ -68,11 +77,11 @@
         <p>Which ares in my work I need to develop? (Check all that apply)</p>
         <div class="checkbox-container">
           <input id="stumbles_1" type="checkbox" name="stumbles_1" value="1">
-          <label>Team work</label>
+          <label class="label-margin-left" for="stumbles_1">Team work</label>
         </div>
         <div class="checkbox-container">
           <input id="stumbles_2" type="checkbox"  name="stumbles_2" value="2">
-          <label for="successes_1">Code Quality</label>
+          <label class="label-margin-left" for="stumbles_2">Code Quality</label>
         </div>
       </div>
 
